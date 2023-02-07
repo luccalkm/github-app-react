@@ -6,9 +6,9 @@ import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'
 
 ReactFC.fcRoot(FusionCharts, Chart, FusionTheme)
 
-const Column2D = ({ data }) => {
+const Column3D = ({ data }) => {
   const chartConfigs = {
-    type: 'column2d', // The chart type
+    type: 'column3d', // The chart type
     width: '100%', // Width of the chart
     height: '400', // Height of the chart
     dataFormat: 'json', // Data type
@@ -31,4 +31,4 @@ const Column2D = ({ data }) => {
   return <ReactFC {...chartConfigs} />
 }
 
-export default Column2D
+export default Column3D
